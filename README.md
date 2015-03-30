@@ -36,6 +36,8 @@ __Now__, this boilerplate comes with a complete assets pipeline that allows you 
 - `$ gulp serve` For a live server watching all your SCSS, JS and index.html files using [Browsersync](http://www.browsersync.io/), so that you can code and automatically preview IRL countless devices/browsers using the dev URL given in the console.  
 - `$ npm run build` To build the app for a fully-effective and optimized prod version of your app. It will take a couple of seconds to build it up in the `app/dist` folder. It will use the  r.js optimizer to build your app with only two JS files (the app itself and its dependencies), concat, minify all the JS code; then run a Gulp build task to add a revision hash to the freshly built JS app, and do the same for the SCSS files (compile, concat, optimize, uglify and revision); and finally build an optimized prod-ready HTML taking care of those new files and the dist app's new architecture.  
 
+__Be careful__, once built, the `dist` app probaby won't work in a local environment as the html `base` meta points to the root of the prod server, and you might have set the proper app's root url in the `app/scripts/classes/conf.js` file.  
+
 ### Configuration
 
 The Gulp tasks can be configured in the `gulp-conf.js` file. Thus, you'll be able to chose the app's paths, as well as the stylesheets' order. Indeed, you can chose which vendor and custom css/scss files you need and the order in which they will be concatenated.  

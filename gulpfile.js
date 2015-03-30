@@ -160,17 +160,10 @@ gulp.task('serve', ['styles'], function () {
   gulp.watch(conf.paths.app + '/*.html').on('change', reload);
 });
 
-gulp.task('serve-prod', function () {
-  /* Start browsersync for socket live reload */
-  browserSync({
-    server: "./" + conf.paths.dist
-  });
-});
-
 /*
   Build task, concat & uglify + image optimization
  */
-gulp.task('build', ['build-html', 'images', 'serve-prod'], function () {
+gulp.task('build', ['build-html', 'images'], function () {
   /* Then, simple dist cleaning for tmp files */
   return gulp.src([
     conf.paths.dist + '/rev-manifest-*',
