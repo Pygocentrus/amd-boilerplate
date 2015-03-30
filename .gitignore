@@ -1,0 +1,12 @@
+/**/.DS_Store
+npm-debug.log
+
+node_modules/
+app/bower_components/
+
+dist/
+app/dist/
+
+app/styles/main.css
+
+dploy.yaml

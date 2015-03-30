@@ -1,0 +1,15 @@
+{
+  "elements": [{
+    "id": 1,
+    "title": "Foo project",
+    "duration": "4 months",
+    "position": "Developer",
+    "slug": "foo"
+   }, {
+     "id": 2,
+     "title": "Bar project",
+     "duration": "6 months",
+     "position": "Developer",
+     "slug": "bar"
+   }]
+}
